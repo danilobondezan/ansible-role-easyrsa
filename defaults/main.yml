@@ -53,7 +53,7 @@ easyrsa_conf_ssl_conf: "$EASYRSA/openssl-easyrsa.cnf"
 # }}}
 # Certificates {{{
 easyrsa_servers:
-  - name: my-server
+  - name: server
     pass: ~
     cn: ~
 # A list of server certificates to create. If `cn` (the common name) is left
@@ -115,6 +115,6 @@ easyrsa_to_pkcs1: []
 # easyrsa_to_pkcs1: "{{ easyrsa_servers }}"
 # }}}
 # Other {{{
-easyrsa_generate_dh: false
+easyrsa_generate_dh: true
 # Set to true to generate Diffie-Hellman parameters.
 # }}}
